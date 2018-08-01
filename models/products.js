@@ -32,7 +32,7 @@ router.get('/:id', function (req, res) {
     });
 });
 
-
+// Routing for update products
 router.put('/:id', function (req, res) {
     let id = req.params.id;
     let pname = req.body.pname;
