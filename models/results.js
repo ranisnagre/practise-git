@@ -39,15 +39,16 @@ router.put('/:id', function (req, res) {
     let id = req.params.id;
     let name = req.body.name;
     let rank = req.body.rank;
-    let valid = req.body.valid;
+    let validDays = req.body.validDays;
     let available = req.body.available;
     let query = `UPDATE results SET
                     name = "${name}",
                     rank = "${rank}",
-                    valid = "${valid}",
+                    validDays = "${validDays}",
                     available = "${available}"
             WHERE id = ${id}
             `;
+    console.log(query);
 
     connection.query(query, function (error, results) {
         if (error) {
@@ -65,15 +66,15 @@ router.post('/', function (req, res) {
 
     let name = req.body.name;
     let rank = req.body.rank;
-    let valid = req.body.valid;
+    let validDays = req.body.validDays;
     let available = req.body.available;
-    let query = `INSERT INTO reuslts SET
+    let query = `INSERT INTO results SET
                     name = "${name}",
                     rank = "${rank}",
-                    valid = "${valid}",
+                    validDays = "${validDays}",
                     available = "${available}"
                 `;
-
+    console.log(query);
     connection.query(query, function (error, results) {
         if (error) {
             throw error;
