@@ -22,5 +22,4 @@ app.listen(5000, () => {
     console.log('example app listning on port 5000')
 });
 
-// Kuch kuch hota hai
 // Tum nahi samjhogi
