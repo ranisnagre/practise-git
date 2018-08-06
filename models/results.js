@@ -34,7 +34,6 @@ router.get('/:id', function (req, res) {
     });
 
 });
-
 router.put('/:id', function (req, res) {
     let id = req.params.id;
     let name = req.body.name;
@@ -61,7 +60,6 @@ router.put('/:id', function (req, res) {
         }
     });
 });
-
 router.post('/', function (req, res) {
 
     let name = req.body.name;
