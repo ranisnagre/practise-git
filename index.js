@@ -24,4 +24,3 @@ app.listen(5000, () => {
 
 // Kuch kuch hota hai
 // Tum nahi samjhogi
-// Kyuki tumko GIT nahi aata hai
