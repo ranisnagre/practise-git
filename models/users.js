@@ -1,7 +1,6 @@
 let express = require('express');
 let connection = require('../config/mysql-connection');
 let router = express.Router();
-
 router.get('/', function (req, res) {
     let query = `SELECT * from users`;
     connection.query(query, function (error, results) {
